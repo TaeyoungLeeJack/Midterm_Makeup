@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage{pgfplots}
+\usepackage{graphicx}
 \usepackage[margin=0.75in, paperwidth=8.5in, paperheight=11in]{geometry}
 \usepackage{setspace}
 \usepackage{fancyvrb} % extended verbatim environments
@@ -15,7 +16,7 @@
 \doublespacing
 \textbf{IB Computer Science }                        %%%(class number and section) 
  \hfill                             %%%(date of test)
-$ {\bf Name: } \underline{\hspace{2.5in}}$(3 points)
+$ {\bf Name:TaeyoungLee} \underline{\hspace{2.5in}}$(3 points)
 
 \begin{centering}
 \vspace{1cm}
@@ -37,7 +38,9 @@ $ {\bf Name: } \underline{\hspace{2.5in}}$(3 points)
  print a
  \end{verbatim}
  \vspace{1cm}
- 
+ \begin{verbatim}
+ [0,1,1,2,3,5]
+ \end{verbatim}
  b.  \begin{verbatim}
  a=[]
  for i in range(4):
@@ -49,6 +52,10 @@ $ {\bf Name: } \underline{\hspace{2.5in}}$(3 points)
  \end{verbatim}
  \vspace{1cm}
  
+ \begin{verbatim}
+ [[0,2,4],[1,3,5],[2,4,6],[3,5,7]]
+ \end{verbatim}
+
  c.  \begin{verbatim}
  a=[1,3,4,2,8]
  b=[]
@@ -56,17 +63,42 @@ $ {\bf Name: } \underline{\hspace{2.5in}}$(3 points)
      b=b+[a[i+1]-a[i]]
  print b
  \end{verbatim}
- 
+ \begin{verbatim}
+ [2,1,­‐2,6]
+ \end{verbatim}
   \newpage
   
   $\bf{2)}$ Write the output of the following programs. (10 points each)
   
   a.  Write a program that prints the sum of 100 random number between 0 and 1. 
-  
+  \begin{verbatim}
+  Import random
+  S=0
+  For i in range(100):
+	  S=s+random.uniform(0,1)
+  Print s
+  \end{verbatim}
   b.  Write a program that prints the average value of an array "a". 
-  
+  \begin{verbatim}
+a=[n,n+1,n+2,n+3,n+4,n+5……]
+print sum(a)/len(a)
+  \end{verbatim}
   c.  Write a program that builds a 10 by 10 checkerboard array of ones and zeros.
-
+	\begin{verbatim}
+	Import random
+	xx=[]
+	for i in range(10):
+	r=xx+[range(10)]
+	b=range(10)
+	t=3.0
+	for j in range(10):
+	for i in range(10):
+		if random.uniform(0,10)<t:
+			r[i][j]=1
+		else:
+			r[i][j]=0
+	print r
+	\end{verbatim}
   
   
   
@@ -86,9 +118,10 @@ for i in range(1,6):
     circ.draw(win)
     rec.draw(win)
     t.draw(win)
-    
     \end{verbatim}
-    
+    \begin{figure}
+    \includegraphics[width=40mm]{midterm_makeup.jpg}
+    \end{figure}
    
   \newpage
   
@@ -96,11 +129,18 @@ for i in range(1,6):
   \vspace{0.5cm}
   
    a. Convert the Base5 number 432 to Base10. 
+   \begin{verbatim}
+   97
+   \end{verbatim}
   
   b. Convert the binary number 1010001 to Base10. 
-  
+  \begin{verbatim}
+  81
+  \end{verbatim}
   c. Convert the Base10 number 532 to Base5.
-  
+  \begin{verbatim}
+  4112
+  \end{verbatim}
   
 
  
